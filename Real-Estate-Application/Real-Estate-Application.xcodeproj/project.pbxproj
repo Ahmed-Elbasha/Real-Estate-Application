@@ -15,6 +15,12 @@
 		7E04A8C3201366200022B86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8C1201366200022B86E /* LaunchScreen.storyboard */; };
 		7E04A8CE201366200022B86E /* Real_Estate_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8CD201366200022B86E /* Real_Estate_ApplicationTests.swift */; };
 		7E04A8D9201366200022B86E /* Real_Estate_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8D8201366200022B86E /* Real_Estate_ApplicationUITests.swift */; };
+		7E04A8EC20137F660022B86E /* ApartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8EB20137F660022B86E /* ApartmentType.swift */; };
+		7E04A8EE201381980022B86E /* comission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8ED201381980022B86E /* comission.swift */; };
+		7E04A8F02013830B0022B86E /* ContractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8EF2013830B0022B86E /* ContractType.swift */; };
+		7E04A8F2201384050022B86E /* ContractDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8F1201384050022B86E /* ContractDuration.swift */; };
+		7E04A8F4201384FD0022B86E /* ApartmentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8F3201384FD0022B86E /* ApartmentStatus.swift */; };
+		7E04A8F62013866C0022B86E /* ApartmentAcquisitionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04A8F52013866C0022B86E /* ApartmentAcquisitionMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		7E04A8D4201366200022B86E /* Real-Estate-ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Real-Estate-ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04A8D8201366200022B86E /* Real_Estate_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Real_Estate_ApplicationUITests.swift; sourceTree = "<group>"; };
 		7E04A8DA201366200022B86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E04A8EB20137F660022B86E /* ApartmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentType.swift; sourceTree = "<group>"; };
+		7E04A8ED201381980022B86E /* comission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comission.swift; sourceTree = "<group>"; };
+		7E04A8EF2013830B0022B86E /* ContractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractType.swift; sourceTree = "<group>"; };
+		7E04A8F1201384050022B86E /* ContractDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDuration.swift; sourceTree = "<group>"; };
+		7E04A8F3201384FD0022B86E /* ApartmentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentStatus.swift; sourceTree = "<group>"; };
+		7E04A8F52013866C0022B86E /* ApartmentAcquisitionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentAcquisitionMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,12 @@
 		7E04A8EA201366AB0022B86E /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				7E04A8EB20137F660022B86E /* ApartmentType.swift */,
+				7E04A8ED201381980022B86E /* comission.swift */,
+				7E04A8EF2013830B0022B86E /* ContractType.swift */,
+				7E04A8F1201384050022B86E /* ContractDuration.swift */,
+				7E04A8F3201384FD0022B86E /* ApartmentStatus.swift */,
+				7E04A8F52013866C0022B86E /* ApartmentAcquisitionMethod.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -294,6 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E04A8F62013866C0022B86E /* ApartmentAcquisitionMethod.swift in Sources */,
+				7E04A8F4201384FD0022B86E /* ApartmentStatus.swift in Sources */,
+				7E04A8F2201384050022B86E /* ContractDuration.swift in Sources */,
+				7E04A8EE201381980022B86E /* comission.swift in Sources */,
+				7E04A8F02013830B0022B86E /* ContractType.swift in Sources */,
+				7E04A8EC20137F660022B86E /* ApartmentType.swift in Sources */,
 				7E04A8B8201366200022B86E /* ViewController.swift in Sources */,
 				7E04A8B6201366200022B86E /* AppDelegate.swift in Sources */,
 				7E04A8BE201366200022B86E /* Real_Estate_Application.xcdatamodeld in Sources */,
