@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C205" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Apartment" representedClassName="Apartment" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apartmentAquisitionMethod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apartmentStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apartmentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="area" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="brokerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comission" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="compundName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractDuration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="contractType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followUpCase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfBathrooms" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfChumbers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfReceptions" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfReviews" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="overPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="purchasePrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="apartmentToBroker" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Broker" inverseName="brokerToApartment" inverseEntity="Broker" syncable="YES"/>
+        <relationship name="apartmentToCustomer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="customerToApartment" inverseEntity="Customer" syncable="YES"/>
+    </entity>
+    <entity name="Broker" representedClassName="Broker" syncable="YES" codeGenerationType="class">
+        <attribute name="brokerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="brokerToApartment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Apartment" inverseName="apartmentToBroker" inverseEntity="Apartment" syncable="YES"/>
+    </entity>
+    <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
+        <attribute name="customerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="customerToApartment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Apartment" inverseName="apartmentToCustomer" inverseEntity="Apartment" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Apartment" positionX="-36" positionY="27" width="128" height="388"/>
+        <element name="Broker" positionX="-128" positionY="-216" width="128" height="88"/>
+        <element name="Customer" positionX="-405" positionY="-81" width="128" height="88"/>
+    </elements>
 </model>
